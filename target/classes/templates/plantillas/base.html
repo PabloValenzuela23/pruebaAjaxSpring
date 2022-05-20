@@ -1,0 +1,92 @@
+<!doctype html>
+<html xmlns:th = "http://www.thymeleaf.org">
+  <head th:fragment = "head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="plantillaBase.css">
+    <title>SmartFit</title>
+  </head>
+  <body>
+    
+        <nav th:fragment = "nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a href="home" class="navbar-brand mb-0 h1">
+                   <img class="d-inline-block align-top" src="img/logo.png" width="30" height="30" >
+                    
+                </a>
+                <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <samp class="navbar-toggler-icon"></samp>
+        
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="crearColaborador" class="nav-link">
+                            Agregar Colaborador
+                        </a> 
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           					Crear DTI
+          				</a>
+          				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				            <li><a class="dropdown-item" href="crearAdministrador" value="A">Agregar Administrador</a></li>
+				            <li><a class="dropdown-item" href="crearSuperAdministrador" value="S">Agregar Super Administrador</a></li>
+			          </ul>
+			        </li>
+                                    
+                    
+                    <li>
+                        <a href="crearSede" class="nav-link">
+                            Agregar Sede
+                        </a> 
+                    </li>
+                    <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Agregar Salas
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="crearSalaMusculacion">Agregar Sala de Musculacion</a></li>
+                            <li><a class="dropdown-item" href="crearSalaEntrenamientoMasivo">Agregar Sala de Entrenamiento Masivo</a></li>
+
+                      </ul>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="home" class="nav-link">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">
+                            Salas
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="cerrarSesion" class="nav-link">
+                            Cerrar Sesión
+                        </a> 
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    
+    
+        
+    
+
+    <script th:fragment = "script" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
